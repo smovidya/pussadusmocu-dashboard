@@ -12,6 +12,6 @@ LEFT JOIN Project ON Parcel_Project.project_id = Project.project_id
   WHERE
   (
     Project.project_id = ${project_id}
-    OR ${project_id} = ''
+    OR ${project_id} = 'allproject'
   )
 ORDER BY startDate DESC LIMIT 10;
